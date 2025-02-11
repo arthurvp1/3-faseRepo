@@ -7,10 +7,13 @@ function Gerador() {
     const [foto, setFoto] = useState("./images/download.jpg");
 
     const imagens = [
-        "./images/download.jpg",
         "./images/img1.jpg",
         "./images/img2.jpg",
-        "./images/img3.jpg"
+        "./images/img3.jpg",
+        "./images/img4.jpg",
+        "./images/img5.jpg",
+        "./images/img6.png",
+        "./images/img7.png"
       ];
 
       function mudarFoto() {
