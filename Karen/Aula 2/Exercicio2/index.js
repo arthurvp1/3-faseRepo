@@ -7,7 +7,11 @@ const app = express()
 
 app.use(express.json())
 
-let usuarios = [];
+let usuarios = [{
+    cpf: 12345678901,
+    nome: "Karen",
+    email: "karen@email.com"
+}];
 
 
 app.post('/Exercicio2', (req, res) => {
@@ -32,6 +36,10 @@ app.get('/usuarios/:cpf', (req, res) => {
         res.status(404).send('usuario não encontrado')
         
     }});
+
+    app.get('/usuarios', (req, res) =>{
+        res.json(usuarios)
+    });
 
 
 app.put('/usuarios/:cpf', (req, res) => {
@@ -63,6 +71,6 @@ app.delete('/usuarios/:cpf', (req, res) => {
 
 const PORT = 3000;
 app.listen(PORT, () => {
-    console.log(`Servcpfor rodando na porta http://localhost:${PORT}`);
+    console.log(`Servidor rodando na porta http://localhost:${PORT}/Exercicio2`);
 });
 

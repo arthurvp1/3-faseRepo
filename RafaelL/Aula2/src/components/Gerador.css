@@ -1,0 +1,15 @@
+.imagem{
+    width: 90%;
+    height: 90%;
+    border-radius: 20px ;
+}
+.troca{
+    width: 100px
+}
+.button{
+    width: 100%;
+    height: 20%;
+    display: flex ;
+    justify-content: center ;
+    align-items: flex-end;
+}
